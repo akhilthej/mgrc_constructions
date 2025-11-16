@@ -1,10 +1,10 @@
-/** @type {import('next').NextConfig} */
+// next.config.mjs
 const nextConfig = {
-  output: 'export', // 👈 ensures Next.js generates static HTML
-  basePath: '/your-repo-name', // 👈 replace with your GitHub repo name
+  output: 'export',
   images: {
-    unoptimized: true, // 👈 disables image optimization (not supported on GH Pages)
+    unoptimized: true
   },
+  trailingSlash: true
 };
 
 export default nextConfig;

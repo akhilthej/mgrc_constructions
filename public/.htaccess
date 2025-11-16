@@ -1,0 +1,20 @@
+AddDefaultCharset utf-8
+DirectoryIndex index.html
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Allow Next.js assets
+  RewriteCond %{REQUEST_URI} ^/_next/ [NC,OR]
+  RewriteCond %{REQUEST_URI} ^/static/ [NC,OR]
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # Serve existing files/directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Route all other requests to index.html
+  RewriteRule . /index.html [L]
+</IfModule>
