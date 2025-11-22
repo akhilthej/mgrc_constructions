@@ -265,6 +265,99 @@ function CapabilitiesPage() {
 
   return (
     <>
+          {/* SEO Meta Tags */}
+      <head>
+        <title>Engineering Capabilities | M G Rajeev & Co | Hydro-mechanical & Structural Works</title>
+        <meta 
+          name="description" 
+          content="Explore M G Rajeev & Co's comprehensive engineering capabilities: Hydro-mechanical works, heavy structural fabrication, marine infrastructure, surface preparation, and advanced equipment." 
+        />
+        <meta 
+          name="keywords" 
+          content="engineering capabilities, hydro-mechanical works, structural fabrication, marine infrastructure, surface preparation, EPC contractor, welding equipment, quality standards, safety protocols" 
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Engineering Capabilities | M G Rajeev & Co" />
+        <meta 
+          property="og:description" 
+          content="Comprehensive engineering services: Hydro-mechanical works, heavy structural fabrication, marine infrastructure with 40+ years expertise and advanced equipment." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mgrajeevco.com/capabilities" />
+        <meta property="og:image" content="https://www.mgrajeevco.com/images/capabilities-engineering-services.jpg" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Engineering Capabilities | M G Rajeev & Co" />
+        <meta 
+          name="twitter:description" 
+          content="40+ years expertise in hydro-mechanical works, structural fabrication, marine infrastructure with advanced equipment and quality standards." 
+        />
+        <meta name="twitter:image" content="https://www.mgrajeevco.com/images/capabilities-twitter-card.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.mgrajeevco.com/capabilities" />
+        
+        {/* Structured Data for Capabilities Page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Service",
+              "name": "Engineering Capabilities - M G Rajeev & Co",
+              "description": "Comprehensive engineering and construction services including hydro-mechanical works, heavy structural fabrication, marine infrastructure, and surface preparation",
+              "provider": {
+                "@type": "Organization",
+                "name": "M G Rajeev & Co",
+                "description": "Premier engineering and EPC contractor with 40+ years of excellence"
+              },
+              "areaServed": "India",
+              "serviceType": [
+                "Hydro-mechanical Works",
+                "Heavy Structural Fabrication", 
+                "Marine & Dockyard Works",
+                "Surface Preparation & Coatings",
+                "Civil Engineering Works",
+                "Electrical & Mechanical Works"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Engineering Services",
+                "itemListElement": [
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Hydro-mechanical Works",
+                      "description": "Fabrication, erection, testing & commissioning of penstocks, radial/vertical gates, gantries, and hoists"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Heavy Structural Fabrication",
+                      "description": "Heavy structural steel fabrication and installation for industrial, marine, and infrastructure projects"
+                    }
+                  },
+                  {
+                    "@type": "Offer",
+                    "itemOffered": {
+                      "@type": "Service",
+                      "name": "Marine & Dockyard Works",
+                      "description": "Specialized marine construction including caisson gates, dock blocks, and naval infrastructure"
+                    }
+                  }
+                ]
+              }
+            })
+          }}
+        />
+      </head>
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/10"></div>

@@ -183,6 +183,96 @@ export default function ProjectsPortfolio() {
 
   return (
     <>
+          {/* SEO Meta Tags */}
+      <head>
+        <title>Project Portfolio | M G Rajeev & Co | 500+ Engineering Projects</title>
+        <meta 
+          name="description" 
+          content="Explore M G Rajeev & Co's project portfolio: 500+ completed projects in hydro-mechanical works, defence infrastructure, marine construction, and industrial fabrication." 
+        />
+        <meta 
+          name="keywords" 
+          content="project portfolio, engineering projects, hydro-mechanical works, defence projects, marine infrastructure, completed projects, ongoing projects, Tehri Dam, Indian Navy projects" 
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Project Portfolio | M G Rajeev & Co | 500+ Engineering Projects" />
+        <meta 
+          property="og:description" 
+          content="40+ years of engineering excellence showcased through landmark projects in defence, hydro power, marine infrastructure, and industrial sectors." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mgrajeevco.com/projects" />
+        <meta property="og:image" content="https://www.mgrajeevco.com/images/project-portfolio-showcase.jpg" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Project Portfolio | M G Rajeev & Co" />
+        <meta 
+          name="twitter:description" 
+          content="500+ completed projects showcasing engineering excellence in hydro-mechanical works, defence infrastructure, and marine construction." 
+        />
+        <meta name="twitter:image" content="https://www.mgrajeevco.com/images/projects-twitter-card.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.mgrajeevco.com/projects" />
+        
+        {/* Structured Data for Project Portfolio */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              "name": "Project Portfolio - M G Rajeev & Co",
+              "description": "Portfolio of 500+ engineering projects completed by M G Rajeev & Co across defence, hydro power, marine infrastructure, and industrial sectors",
+              "mainEntity": {
+                "@type": "ItemList",
+                "numberOfItems": 500,
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "item": {
+                      "@type": "CreativeWork",
+                      "name": "Tehri Dam Hydro-mechanical Works",
+                      "description": "Complete hydro-mechanical works including penstocks, radial gates, gantry cranes, and hoists for THDC Ltd",
+                      "location": "Uttarakhand, India"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "item": {
+                      "@type": "CreativeWork",
+                      "name": "Naval Dockyard Marine Infrastructure",
+                      "description": "Construction of caisson gates, dock blocks, slipway upgrades, and marine structures for Indian Navy",
+                      "location": "Visakhapatnam, India"
+                    }
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "item": {
+                      "@type": "CreativeWork",
+                      "name": "Integrated Mini Steel Plant",
+                      "description": "Complete fabrication, erection, testing and commissioning of integrated steel plant for Maa Maha Maya Industries",
+                      "location": "Kothavalasa, India"
+                    }
+                  }
+                ]
+              },
+              "about": {
+                "@type": "Organization",
+                "name": "M G Rajeev & Co",
+                "description": "Premier engineering and EPC contractor with 40+ years of excellence"
+              }
+            })
+          }}
+        />
+      </head>
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/10"></div>

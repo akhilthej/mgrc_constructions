@@ -11,6 +11,77 @@ import {
 function Page() {
   return (
     <>
+      {/* SEO Meta Tags */}
+      <head>
+        <title>M G Rajeev & Co | Premier Engineering & EPC Contractor | 40+ Years Excellence</title>
+        <meta 
+          name="description" 
+          content="M G Rajeev & Co - Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure for defence and industrial sectors since 1984." 
+        />
+        <meta 
+          name="keywords" 
+          content="engineering contractor, EPC contractor, hydro-mechanical works, steel fabrication, marine infrastructure, Indian Navy, hydro power, heavy structural fabrication, Visakhapatnam" 
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="M G Rajeev & Co | Premier Engineering & EPC Contractor" />
+        <meta 
+          property="og:description" 
+          content="40+ years of engineering excellence in hydro-mechanical works, heavy steel structures, and marine infrastructure for defence and industrial sectors." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mgrajeevco.com" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="M G Rajeev & Co | Engineering Excellence Since 1984" />
+        <meta 
+          name="twitter:description" 
+          content="Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure." 
+        />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.mgrajeevco.com" />
+        
+        {/* Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "M G Rajeev & Co",
+              "description": "Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure",
+              "foundingDate": "1984",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Visakhapatnam",
+                "addressRegion": "Andhra Pradesh",
+                "addressCountry": "India"
+              },
+              "areaServed": "India",
+              "serviceType": [
+                "Hydro-mechanical Works",
+                "Heavy Structural Fabrication",
+                "Marine & Dockyard Works",
+                "Surface Preparation & Coatings",
+                "Civil Engineering Works",
+                "Electrical & Mechanical Works"
+              ],
+              "knowsAbout": [
+                "Engineering",
+                "EPC Contractor",
+                "Steel Fabrication",
+                "Hydro Power Infrastructure",
+                "Marine Construction",
+                "Defence Infrastructure"
+              ]
+            })
+          }}
+        />
+      </head>
       {/* Hero Section */}
       <section className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800">
         <div className="absolute inset-0 bg-grid-white/5" />

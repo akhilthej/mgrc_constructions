@@ -211,6 +211,95 @@ function AboutUs() {
 
   return (
     <>
+      {/* SEO Meta Tags for About Us Page */}
+  <head>
+    <title>About M G Rajeev & Co | 40+ Years Engineering Excellence | Leadership Team</title>
+    <meta 
+      name="description" 
+      content="Learn about M G Rajeev & Co's 40+ year legacy in engineering excellence. Meet our leadership team, explore our vision, mission, and journey since 1984." 
+    />
+    <meta 
+      name="keywords" 
+      content="about M G Rajeev & Co, engineering company history, leadership team, company vision, 40 years experience, EPC contractor about, technical team, company timeline" 
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    
+    {/* Open Graph Meta Tags */}
+    <meta property="og:title" content="About M G Rajeev & Co | 40+ Years Engineering Excellence" />
+    <meta 
+      property="og:description" 
+      content="Discover our legacy of engineering excellence since 1984. Meet our experienced leadership and technical teams driving quality and innovation." 
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.mgrajeevco.com/about" />
+    <meta property="og:image" content="https://www.mgrajeevco.com/images/about-company-legacy.jpg" />
+    
+    {/* Twitter Card Meta Tags */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About M G Rajeev & Co | Engineering Legacy Since 1984" />
+    <meta 
+      name="twitter:description" 
+      content="40+ years of engineering excellence in defence, marine, and hydro-mechanical infrastructure. Meet our expert team and explore our journey." 
+    />
+    <meta name="twitter:image" content="https://www.mgrajeevco.com/images/about-twitter-card.jpg" />
+    
+    {/* Canonical URL */}
+    <link rel="canonical" href="https://www.mgrajeevco.com/about" />
+    
+    {/* Structured Data for About Page */}
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About M G Rajeev & Co",
+          "description": "Learn about our 40+ year legacy in engineering excellence, leadership team, and company history",
+          "publisher": {
+            "@type": "Organization",
+            "name": "M G Rajeev & Co",
+            "description": "Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure",
+            "foundingDate": "1984",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Visakhapatnam",
+              "addressRegion": "Andhra Pradesh",
+              "addressCountry": "India"
+            },
+            "numberOfEmployees": {
+              "@type": "QuantitativeValue",
+              "value": "50+"
+            },
+            "founder": {
+              "@type": "Person",
+              "name": "Shri M. G. Rajeev"
+            }
+          },
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "M G Rajeev & Co",
+            "foundingDate": "1984",
+            "founder": {
+              "@type": "Person",
+              "name": "Shri M. G. Rajeev"
+            },
+            "description": "Engineering and EPC contractor with 40+ years of excellence in defence, marine, and hydro-mechanical infrastructure",
+            "numberOfEmployees": "50+",
+            "areaServed": "India",
+            "knowsAbout": [
+              "Engineering",
+              "EPC Contractor",
+              "Steel Fabrication",
+              "Hydro Power Infrastructure",
+              "Marine Construction",
+              "Defence Infrastructure"
+            ]
+          }
+        })
+      }}
+    />
+  </head>
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/10"></div>

@@ -171,6 +171,91 @@ function ContactPage() {
 
   return (
     <>
+          {/* SEO Meta Tags */}
+      <head>
+        <title>Contact M G Rajeev & Co | Engineering Project Consultation | Get Quote</title>
+        <meta 
+          name="description" 
+          content="Contact M G Rajeev & Co for engineering project consultation. Get quotes for hydro-mechanical works, structural fabrication, marine infrastructure, and industrial projects." 
+        />
+        <meta 
+          name="keywords" 
+          content="contact M G Rajeev & Co, engineering consultation, project quote, hydro-mechanical works, structural fabrication, marine infrastructure, get in touch, Visakhapatnam office" 
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="robots" content="index, follow" />
+        
+        {/* Open Graph Meta Tags */}
+        <meta property="og:title" content="Contact M G Rajeev & Co | Engineering Project Consultation" />
+        <meta 
+          property="og:description" 
+          content="Get expert engineering consultation and project quotes for hydro-mechanical works, structural fabrication, and marine infrastructure projects." 
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.mgrajeevco.com/contact" />
+        <meta property="og:image" content="https://www.mgrajeevco.com/images/contact-engineering-consultation.jpg" />
+        
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact M G Rajeev & Co | Engineering Experts" />
+        <meta 
+          name="twitter:description" 
+          content="40+ years engineering expertise. Contact us for project consultation, quotes, and technical support for your infrastructure projects." 
+        />
+        <meta name="twitter:image" content="https://www.mgrajeevco.com/images/contact-twitter-card.jpg" />
+        
+        {/* Canonical URL */}
+        <link rel="canonical" href="https://www.mgrajeevco.com/contact" />
+        
+        {/* Structured Data for Contact Page */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "name": "Contact M G Rajeev & Co",
+              "description": "Contact page for engineering project consultation and quotes",
+              "mainEntity": {
+                "@type": "Organization",
+                "name": "M G Rajeev & Co",
+                "description": "Premier engineering and EPC contractor with 40+ years of excellence",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "# 38-19-14/3, Jyothi Nagar, Marripalem",
+                  "addressLocality": "Visakhapatnam",
+                  "postalCode": "530018",
+                  "addressRegion": "Andhra Pradesh",
+                  "addressCountry": "India"
+                },
+                "telephone": "+91-9515631221",
+                "email": "mgrajeevco@gmail.com",
+                "url": "https://www.mgrajeevco.com",
+                "openingHours": [
+                  "Mo-Fr 09:00-18:00",
+                  "Sa 09:00-14:00"
+                ],
+                "contactPoint": [
+                  {
+                    "@type": "ContactPoint",
+                    "telephone": "+91-9515631221",
+                    "contactType": "customer service",
+                    "areaServed": "IN",
+                    "availableLanguage": ["en", "hi"]
+                  },
+                  {
+                    "@type": "ContactPoint",
+                    "telephone": "+91-7382074773",
+                    "contactType": "technical support",
+                    "areaServed": "IN",
+                    "availableLanguage": ["en", "hi"]
+                  }
+                ]
+              }
+            })
+          }}
+        />
+      </head>
       {/* Hero Section */}
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/10"></div>
