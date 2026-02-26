@@ -259,48 +259,48 @@ function CapabilitiesPage() {
     }
   ];
 
-  const filteredEquipment = activeEquipmentFilter === "all" 
-    ? equipment 
+  const filteredEquipment = activeEquipmentFilter === "all"
+    ? equipment
     : equipment.filter(item => item.category === activeEquipmentFilter);
 
   return (
     <>
-          {/* SEO Meta Tags */}
+      {/* SEO Meta Tags */}
       <head>
         <title>Engineering Capabilities | M G Rajeev & Co | Hydro-mechanical & Structural Works</title>
-        <meta 
-          name="description" 
-          content="Explore M G Rajeev & Co's comprehensive engineering capabilities: Hydro-mechanical works, heavy structural fabrication, marine infrastructure, surface preparation, and advanced equipment." 
+        <meta
+          name="description"
+          content="Explore M G Rajeev & Co's comprehensive engineering capabilities: Hydro-mechanical works, heavy structural fabrication, marine infrastructure, surface preparation, and advanced equipment."
         />
-        <meta 
-          name="keywords" 
-          content="engineering capabilities, hydro-mechanical works, structural fabrication, marine infrastructure, surface preparation, EPC contractor, welding equipment, quality standards, safety protocols" 
+        <meta
+          name="keywords"
+          content="engineering capabilities, hydro-mechanical works, structural fabrication, marine infrastructure, surface preparation, EPC contractor, welding equipment, quality standards, safety protocols"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Engineering Capabilities | M G Rajeev & Co" />
-        <meta 
-          property="og:description" 
-          content="Comprehensive engineering services: Hydro-mechanical works, heavy structural fabrication, marine infrastructure with 40+ years expertise and advanced equipment." 
+        <meta
+          property="og:description"
+          content="Comprehensive engineering services: Hydro-mechanical works, heavy structural fabrication, marine infrastructure with 40+ years expertise and advanced equipment."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mgrajeevco.com/capabilities" />
         <meta property="og:image" content="https://www.mgrajeevco.com/images/capabilities-engineering-services.jpg" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Engineering Capabilities | M G Rajeev & Co" />
-        <meta 
-          name="twitter:description" 
-          content="40+ years expertise in hydro-mechanical works, structural fabrication, marine infrastructure with advanced equipment and quality standards." 
+        <meta
+          name="twitter:description"
+          content="40+ years expertise in hydro-mechanical works, structural fabrication, marine infrastructure with advanced equipment and quality standards."
         />
         <meta name="twitter:image" content="https://www.mgrajeevco.com/images/capabilities-twitter-card.jpg" />
-        
+
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.mgrajeevco.com/capabilities" />
-        
+
         {/* Structured Data for Capabilities Page */}
         <script
           type="application/ld+json"
@@ -318,7 +318,7 @@ function CapabilitiesPage() {
               "areaServed": "India",
               "serviceType": [
                 "Hydro-mechanical Works",
-                "Heavy Structural Fabrication", 
+                "Heavy Structural Fabrication",
                 "Marine & Dockyard Works",
                 "Surface Preparation & Coatings",
                 "Civil Engineering Works",
@@ -362,7 +362,7 @@ function CapabilitiesPage() {
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/10"></div>
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-blue-500"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -399,11 +399,11 @@ function CapabilitiesPage() {
                 <div className={`inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r ${service.gradient} rounded-2xl mb-6 group-hover:scale-110 transition-transform duration-300`}>
                   {service.icon}
                 </div>
-                
+
                 <h3 className="text-2xl font-bold text-slate-900 mb-4">
                   {service.title}
                 </h3>
-                
+
                 <p className="text-slate-600 mb-6 leading-relaxed">
                   {service.description}
                 </p>
@@ -419,7 +419,7 @@ function CapabilitiesPage() {
                     </span>
                   </div>
                   <div className="bg-slate-200 rounded-full h-3">
-                    <div 
+                    <div
                       className={`h-3 rounded-full bg-gradient-to-r ${service.gradient} transition-all duration-1000`}
                       style={{ width: `${service.expertise}%` }}
                     />
@@ -466,11 +466,10 @@ function CapabilitiesPage() {
               <button
                 key={filter}
                 onClick={() => setActiveEquipmentFilter(filter)}
-                className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                  activeEquipmentFilter === filter
+                className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${activeEquipmentFilter === filter
                     ? "bg-gradient-to-r from-amber-500 to-red-500 text-white shadow-lg"
                     : "bg-white text-slate-700 hover:bg-slate-100 hover:shadow-lg border border-slate-200"
-                }`}
+                  }`}
               >
                 {filter === "all" ? "All Equipment" : filter.charAt(0).toUpperCase() + filter.slice(1)}
               </button>
@@ -493,12 +492,12 @@ function CapabilitiesPage() {
                     {item.icon}
                   </div>
                 </div>
-                
+
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-slate-900 mb-4">
                     {item.title}
                   </h3>
-                  
+
                   <div className="text-slate-600 mb-4 space-y-2">
                     {Object.entries(item.details).map(([key, value]) => (
                       <p key={key} className="text-sm">
@@ -506,7 +505,7 @@ function CapabilitiesPage() {
                       </p>
                     ))}
                   </div>
-                  
+
                   <div className="text-sm text-slate-700 space-y-2">
                     {item.features.map((feature, featureIndex) => (
                       <div key={featureIndex} className="flex items-center gap-2">
@@ -606,7 +605,7 @@ function CapabilitiesPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
-              href="/contact"
+              href="/contactus"
               className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get Quote

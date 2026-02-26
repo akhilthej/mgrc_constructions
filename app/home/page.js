@@ -14,37 +14,37 @@ function Page() {
       {/* SEO Meta Tags */}
       <head>
         <title>M G Rajeev & Co | Premier Engineering & EPC Contractor | 40+ Years Excellence</title>
-        <meta 
-          name="description" 
-          content="M G Rajeev & Co - Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure for defence and industrial sectors since 1984." 
+        <meta
+          name="description"
+          content="M G Rajeev & Co - Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure for defence and industrial sectors since 1984."
         />
-        <meta 
-          name="keywords" 
-          content="engineering contractor, EPC contractor, hydro-mechanical works, steel fabrication, marine infrastructure, Indian Navy, hydro power, heavy structural fabrication, Visakhapatnam" 
+        <meta
+          name="keywords"
+          content="engineering contractor, EPC contractor, hydro-mechanical works, steel fabrication, marine infrastructure, Indian Navy, hydro power, heavy structural fabrication, Visakhapatnam"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="M G Rajeev & Co | Premier Engineering & EPC Contractor" />
-        <meta 
-          property="og:description" 
-          content="40+ years of engineering excellence in hydro-mechanical works, heavy steel structures, and marine infrastructure for defence and industrial sectors." 
+        <meta
+          property="og:description"
+          content="40+ years of engineering excellence in hydro-mechanical works, heavy steel structures, and marine infrastructure for defence and industrial sectors."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mgrajeevco.com" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="M G Rajeev & Co | Engineering Excellence Since 1984" />
-        <meta 
-          name="twitter:description" 
-          content="Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure." 
+        <meta
+          name="twitter:description"
+          content="Premier engineering and EPC contractor specializing in hydro-mechanical works, heavy steel structures, and marine infrastructure."
         />
-        
+
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.mgrajeevco.com" />
-        
+
         {/* Structured Data for SEO */}
         <script
           type="application/ld+json"
@@ -87,7 +87,7 @@ function Page() {
         <div className="absolute inset-0 bg-grid-white/5" />
         <div className="absolute top-20 right-20 w-96 h-96 bg-blue-600/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" />
         <div className="absolute bottom-20 left-20 w-96 h-96 bg-amber-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse-slow" />
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Hero Content */}
@@ -96,22 +96,22 @@ function Page() {
                 <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
                 40+ Years of Engineering Excellence
               </div>
-              
+
               <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl mb-8 leading-tight">
                 Building India's
                 <span className="block text-amber-400 mt-2">Infrastructure</span>
                 With Precision & Trust
               </h1>
-              
+
               <p className="text-xl text-blue-100 mb-10 leading-relaxed max-w-2xl">
-                Premier engineering and EPC contractor specializing in hydro-mechanical works, 
+                Premier engineering and EPC contractor specializing in hydro-mechanical works,
                 heavy steel structures, and marine infrastructure for defence and industrial sectors.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-5 mb-12">
                 <a
                   className="group bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 text-center shadow-lg hover:shadow-xl border-2 border-amber-500"
-                  href="/contact"
+                  href="/contactus"
                 >
                   <span className="flex items-center justify-center gap-3">
                     Start Your Project
@@ -149,7 +149,7 @@ function Page() {
                 </div>
               </div>
             </div>
-            
+
             {/* Hero Image */}
             <div className="hidden lg:block relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-white/20">
@@ -160,7 +160,7 @@ function Page() {
                   priority
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
-                
+
                 {/* Image Badge */}
                 <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm rounded-lg p-4 max-w-xs">
                   <h4 className="font-bold text-slate-900 text-sm mb-1">Heavy Structural Fabrication</h4>
@@ -182,7 +182,7 @@ function Page() {
             </h2>
             <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Established in 1984, M G Rajeev & Co has built a reputation for excellence 
+              Established in 1984, M G Rajeev & Co has built a reputation for excellence
               in engineering and construction across diverse sectors.
             </p>
           </div>
@@ -246,7 +246,7 @@ function Page() {
             </h2>
             <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive engineering and construction services across diverse sectors 
+              Comprehensive engineering and construction services across diverse sectors
               with uncompromising quality and safety standards.
             </p>
           </div>
@@ -331,7 +331,7 @@ function Page() {
             </h2>
             <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Showcasing our expertise through landmark projects across defence, 
+              Showcasing our expertise through landmark projects across defence,
               hydro power, and industrial sectors.
             </p>
           </div>
@@ -386,7 +386,7 @@ function Page() {
             </h2>
             <div className="w-24 h-1 bg-amber-400 mx-auto mb-6"></div>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-              Trusted partner for premier government and private clients across 
+              Trusted partner for premier government and private clients across
               defence, hydro power, heavy industry, and public works sectors.
             </p>
           </div>
@@ -457,13 +457,13 @@ function Page() {
             Ready to Build Your Next Project?
           </h2>
           <p className="text-xl text-slate-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Partner with 40+ years of engineering excellence. Let's discuss your 
+            Partner with 40+ years of engineering excellence. Let's discuss your
             infrastructure needs and create something remarkable together.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <a
-              href="/contact"
+              href="/contactus"
               className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get In Touch
@@ -498,11 +498,11 @@ const ProjectCard = ({
 }) => (
   <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group">
     <div className="relative w-full h-48 overflow-hidden">
-      <Image 
-        src={image} 
-        alt={title} 
-        fill 
-        className="object-cover group-hover:scale-105 transition-transform duration-500" 
+      <Image
+        src={image}
+        alt={title}
+        fill
+        className="object-cover group-hover:scale-105 transition-transform duration-500"
       />
       <div className="absolute inset-0 bg-gradient-to-t from-slate-900/50 to-transparent" />
       <div className="absolute top-4 left-4">

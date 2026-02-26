@@ -6,6 +6,7 @@ DirectoryIndex index.html
 
   # Allow Next.js assets
   RewriteCond %{REQUEST_URI} ^/_next/ [NC,OR]
+  RewriteCond %{REQUEST_URI} ^/assets/ [NC,OR]
   RewriteCond %{REQUEST_URI} ^/static/ [NC,OR]
   RewriteCond %{REQUEST_FILENAME} -f
   RewriteRule ^ - [L]

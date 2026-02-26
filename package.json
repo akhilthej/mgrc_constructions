@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node fix-export.js",
     "start": "next start"
   },
   "dependencies": {

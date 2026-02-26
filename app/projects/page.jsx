@@ -163,7 +163,7 @@ export default function ProjectsPortfolio() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const filteredProjects = {
-    completed: projectsData.completed.filter(project => 
+    completed: projectsData.completed.filter(project =>
       activeFilter === "all" || project.category === activeFilter
     ),
     ongoing: projectsData.ongoing.filter(project =>
@@ -183,42 +183,42 @@ export default function ProjectsPortfolio() {
 
   return (
     <>
-          {/* SEO Meta Tags */}
+      {/* SEO Meta Tags */}
       <head>
         <title>Project Portfolio | M G Rajeev & Co | 500+ Engineering Projects</title>
-        <meta 
-          name="description" 
-          content="Explore M G Rajeev & Co's project portfolio: 500+ completed projects in hydro-mechanical works, defence infrastructure, marine construction, and industrial fabrication." 
+        <meta
+          name="description"
+          content="Explore M G Rajeev & Co's project portfolio: 500+ completed projects in hydro-mechanical works, defence infrastructure, marine construction, and industrial fabrication."
         />
-        <meta 
-          name="keywords" 
-          content="project portfolio, engineering projects, hydro-mechanical works, defence projects, marine infrastructure, completed projects, ongoing projects, Tehri Dam, Indian Navy projects" 
+        <meta
+          name="keywords"
+          content="project portfolio, engineering projects, hydro-mechanical works, defence projects, marine infrastructure, completed projects, ongoing projects, Tehri Dam, Indian Navy projects"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
-        
+
         {/* Open Graph Meta Tags */}
         <meta property="og:title" content="Project Portfolio | M G Rajeev & Co | 500+ Engineering Projects" />
-        <meta 
-          property="og:description" 
-          content="40+ years of engineering excellence showcased through landmark projects in defence, hydro power, marine infrastructure, and industrial sectors." 
+        <meta
+          property="og:description"
+          content="40+ years of engineering excellence showcased through landmark projects in defence, hydro power, marine infrastructure, and industrial sectors."
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.mgrajeevco.com/projects" />
         <meta property="og:image" content="https://www.mgrajeevco.com/images/project-portfolio-showcase.jpg" />
-        
+
         {/* Twitter Card Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Project Portfolio | M G Rajeev & Co" />
-        <meta 
-          name="twitter:description" 
-          content="500+ completed projects showcasing engineering excellence in hydro-mechanical works, defence infrastructure, and marine construction." 
+        <meta
+          name="twitter:description"
+          content="500+ completed projects showcasing engineering excellence in hydro-mechanical works, defence infrastructure, and marine construction."
         />
         <meta name="twitter:image" content="https://www.mgrajeevco.com/images/projects-twitter-card.jpg" />
-        
+
         {/* Canonical URL */}
         <link rel="canonical" href="https://www.mgrajeevco.com/projects" />
-        
+
         {/* Structured Data for Project Portfolio */}
         <script
           type="application/ld+json"
@@ -277,7 +277,7 @@ export default function ProjectsPortfolio() {
       <section className="pt-24 pb-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
         <div className="absolute inset-0 bg-grid-white/10"></div>
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-blue-500"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
@@ -304,11 +304,10 @@ export default function ProjectsPortfolio() {
                 <button
                   key={filter}
                   onClick={() => setActiveFilter(filter)}
-                  className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                    activeFilter === filter
+                  className={`px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${activeFilter === filter
                       ? "bg-gradient-to-r from-amber-500 to-red-500 text-white shadow-lg"
                       : "bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200"
-                  }`}
+                    }`}
                 >
                   {filter === "all" ? "All Projects" : categoryLabels[filter]}
                 </button>
@@ -331,12 +330,12 @@ export default function ProjectsPortfolio() {
               expertise across diverse engineering disciplines and sectors.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.completed.map((project) => (
-              <ProjectCard 
-                key={project.id} 
-                project={project} 
+              <ProjectCard
+                key={project.id}
+                project={project}
                 onViewDetails={openProjectModal}
                 type="completed"
               />
@@ -358,12 +357,12 @@ export default function ProjectsPortfolio() {
               commitment to excellence and expanding capabilities.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.ongoing.map((project) => (
-              <ProjectCard 
-                key={project.id} 
-                project={project} 
+              <ProjectCard
+                key={project.id}
+                project={project}
                 onViewDetails={openProjectModal}
                 type="ongoing"
               />
@@ -385,7 +384,7 @@ export default function ProjectsPortfolio() {
               and client satisfaction across diverse project categories.
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               { value: "500+", label: "Projects Completed", sublabel: "Across all sectors", color: "text-orange-600", icon: <FaCheckCircle className="w-8 h-8" /> },
@@ -394,7 +393,7 @@ export default function ProjectsPortfolio() {
               { value: "100%", label: "Safety Record", sublabel: "Zero major incidents", color: "text-purple-600", icon: <FaAward className="w-8 h-8" /> }
             ].map((stat, index) => (
               <div key={index} className="text-center bg-white border border-slate-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-               
+
                 <div className="text-slate-800 font-semibold mb-2">
                   {stat.label}
                 </div>
@@ -419,7 +418,7 @@ export default function ProjectsPortfolio() {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <Link
-              href="/contact"
+              href="/contactus"
               className="inline-flex items-center gap-3 bg-amber-500 hover:bg-amber-600 text-slate-900 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               <FaRocket className="w-5 h-5" />
@@ -452,7 +451,7 @@ export default function ProjectsPortfolio() {
                   <FaTimes className="w-6 h-6" />
                 </button>
               </div>
-              
+
               <div className="relative h-64 mb-6 rounded-xl overflow-hidden border border-slate-200">
                 <Image
                   src={selectedProject.image}
@@ -461,7 +460,7 @@ export default function ProjectsPortfolio() {
                   className="object-cover"
                 />
               </div>
-              
+
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
@@ -478,7 +477,7 @@ export default function ProjectsPortfolio() {
                       <div className="text-slate-900">{selectedProject.location}</div>
                     </div>
                   </div>
-                  
+
                   {'duration' in selectedProject && (
                     <div className="flex items-center gap-3">
                       <FaCalendarAlt className="w-5 h-5 text-slate-400" />
@@ -498,7 +497,7 @@ export default function ProjectsPortfolio() {
                     </div>
                   )}
                 </div>
-                
+
                 <div>
                   <h4 className="font-semibold text-slate-900 mb-3 flex items-center gap-2">
                     <HiOutlineClipboardCheck className="w-5 h-5" />
@@ -509,7 +508,7 @@ export default function ProjectsPortfolio() {
                   </p>
                 </div>
               </div>
-              
+
               {'progress' in selectedProject && (
                 <div className="mb-6">
                   <div className="flex justify-between text-sm text-slate-600 mb-2">
@@ -524,7 +523,7 @@ export default function ProjectsPortfolio() {
                   </div>
                 </div>
               )}
-              
+
               <button
                 onClick={closeProjectModal}
                 className="w-full bg-slate-900 hover:bg-slate-800 text-white py-3 rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2"
@@ -559,9 +558,8 @@ const ProjectCard = ({ project, onViewDetails, type }) => {
           </span>
         </div>
         <div className="absolute top-4 right-4">
-          <span className={`inline-flex items-center gap-2 bg-gradient-to-r ${
-            type === 'completed' ? 'from-green-500 to-emerald-500' : 'from-orange-500 to-red-500'
-          } text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm`}>
+          <span className={`inline-flex items-center gap-2 bg-gradient-to-r ${type === 'completed' ? 'from-green-500 to-emerald-500' : 'from-orange-500 to-red-500'
+            } text-white px-3 py-1 rounded-full text-sm font-medium backdrop-blur-sm`}>
             {type === 'completed' ? <FaCheckCircle className="w-4 h-4" /> : <FaClock className="w-4 h-4" />}
             {type === 'completed' ? 'Completed' : 'Ongoing'}
           </span>
@@ -571,7 +569,7 @@ const ProjectCard = ({ project, onViewDetails, type }) => {
           {project.location}
         </div>
       </div>
-      
+
       <div className="p-6">
         <h3 className="text-xl font-bold text-slate-900 mb-3 line-clamp-2">
           {project.title}
@@ -579,7 +577,7 @@ const ProjectCard = ({ project, onViewDetails, type }) => {
         <p className="text-slate-600 mb-4 text-sm leading-relaxed line-clamp-3">
           {project.description}
         </p>
-        
+
         <div className="space-y-3 mb-4">
           <div className="flex justify-between text-sm">
             <span className="text-slate-700 font-medium flex items-center gap-2">
@@ -588,7 +586,7 @@ const ProjectCard = ({ project, onViewDetails, type }) => {
             </span>
             <span className="text-slate-900">{project.client}</span>
           </div>
-   
+
           {'duration' in project && (
             <div className="flex justify-between text-sm">
               <span className="text-slate-700 font-medium flex items-center gap-2">
@@ -623,7 +621,7 @@ const ProjectCard = ({ project, onViewDetails, type }) => {
             </div>
           </div>
         )}
-        
+
         <button
           onClick={() => onViewDetails(project.id)}
           className="w-full bg-slate-900 hover:bg-slate-800 text-white py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2"
